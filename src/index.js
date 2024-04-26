@@ -13,9 +13,11 @@ ReactDOM.render(
 // (the root element is in the public/index.html file)
 // the App component is the parent component of the entire
 // application.
+
 // the App component is imported from the App.js file.
 // the App component is a functional component that returns
 // JSX.
+
 // the App component is wrapped in a <React.StrictMode> tag.
 // the <React.StrictMode> tag is a tool for highlighting
 // potential problems in an application.
@@ -23,5 +25,4 @@ ReactDOM.render(
 // the <React.StrictMode> tag does not render any visible UI.
 // the <React.StrictMode> tag activates additional checks and
 // warnings for its descendants.
-// the <React.StrictMode> tag is a self-closing tag.
 // the <React.StrictMode> tag wraps the App component.
