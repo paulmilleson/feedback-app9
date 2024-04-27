@@ -1,20 +1,16 @@
 import { useState } from "react"
 import Header from './components/Header';
-import FeedbackItem from './components/FeedbackItem';
+import FeedbackList from './components/FeedbackList';
+import FeedbackData from './data/FeedbackData';
 
 function App() {
-  const [feedbacks, setFeedbacks] = useState([
-    {rating: 7, text: 'This is an example of a feedback FeedbackItem'},
-    {rating: 8, text: 'This is an example of a feedback FeedbackItem'},
-    {rating: 9, text: 'This is an example of a feedback FeedbackItem'},
-    {rating: 10, text: 'This is an example of a feedback FeedbackItem'},
-    {rating: 6, text: 'This is an example of a feedback FeedbackItem'},
-  ])
+  const [feedback, setFeedback] = useState(FeedbackData)
+
   return (
     <>
         <Header />
         <div className="container"> 
-            <FeedbackItem />
+            <FeedbackList feedback={feedback} />
         </div>
     </>
   )
@@ -25,7 +21,7 @@ export default App;
 // could enclose all of our sub-elements in one parent
 // element (in this case a div set) - but a code 
 // fragment can also be used, (and won't show up in the
-// html) consisting of <></> !
+// html) consisting of <> and </> !
 
 // If you want to use a class in a component, you can do so
 // by using the word: className instead of the word: class
@@ -35,3 +31,16 @@ export default App;
 // by using the word htmlFor= instead of the word for=
 // (which is an illegal word in JSX.)
 
+//The provided code is written in JavaScript and makes use of the useState hook in React.
+
+//Here's a breakdown of the code:
+
+//The useState is a React hook that allows functional components to have state.
+
+//The const keyword is used to declare a constant variable named feedback.
+
+//The setFeedback is a function that will be used to update the value of feedback.
+
+//The [feedback, setFeedback] is an array destructuring that assigns the initial value of FeedbackData to feedback and the function to update feedback to setFeedback.
+
+//In summary, the code initializes the feedback state variable and provides the initial value from the FeedbackData data source. The setFeedback function can be used later to update the value of feedback.
